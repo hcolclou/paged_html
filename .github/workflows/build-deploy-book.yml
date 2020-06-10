@@ -41,6 +41,7 @@ jobs:
         python inject_css.py
         pip install .
         echo "now build the book"
+        cd examples
         sphinx-build -v -a -b html page_break_test  page_break_test/_build/html
         cd ..
 
